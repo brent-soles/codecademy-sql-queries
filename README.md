@@ -90,9 +90,10 @@ GROUP BY player;
 - You could also use DISTINCT(game), instead of group by.
 
 10. The `stream` table and the `chat` table share a column: `device_id`. Do a `JOIN` of the two tables on that column.
-
-SELECT * FROM stream JOIN chat ON device_id = device_id;
-
+```sql
+SELECT * 
+FROM stream JOIN chat ON device_id = device_id;
+```
 ---
 
 **Bonus:** Now try to find some other interesting insights from these two tables using SQL!
